@@ -1,0 +1,1 @@
+* * * * * while (( `/usr/bin/osascript -e "get volume settings" | awk '{print $5}' | cut -f2 -d":" | cut -f1 -d","` < 50 )); do /usr/bin/osascript -e "set volume input volume 50"; sleep 0.1; done;
